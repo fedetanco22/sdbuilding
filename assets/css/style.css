@@ -68,7 +68,7 @@ h6 {
 }
 
 .back-to-top:hover {
-  background: #e72323;
+  background: #facb3e;
   color: #fff;
 }
 
@@ -478,6 +478,10 @@ section {
   overflow: hidden;
 }
 
+section:last-child {
+  padding: 0;
+}
+
 .section-title {
   text-align: center;
   padding: 30px 0;
@@ -540,7 +544,7 @@ section {
 
 .section-subtitle {
   text-align: center;
-  padding: 30px 0;
+  padding: 30px 0 10px;
   position: relative;
 }
 
@@ -624,6 +628,7 @@ section {
   box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
   transition: all ease-in-out 0.3s;
   max-height: 210px;
+  margin-top: 10px;
 }
 
 .services .box span {
@@ -634,7 +639,7 @@ section {
 }
 
 .services .box h4 {
-  font-size: 24px;
+  font-size: 20px;
   font-weight: 600;
   padding: 0;
   margin: 20px 0;
@@ -796,7 +801,16 @@ section {
 /*--------------------------------------------------------------
 # Portfolio Section
 --------------------------------------------------------------*/
+.portfolio {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
+.portfolio .portfolio-item {
+  max-height: 400px;
+}
 .portfolio .portfolio-wrap {
   box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
   border-radius: 10px;
@@ -804,14 +818,19 @@ section {
   overflow: hidden;
 }
 
+.portfolio .portfolio-wrap .portfolio-img {
+  height: 175px;
+}
+
 .portfolio .portfolio-wrap img {
-  transition: 0.3s;
-  position: relative;
-  z-index: 1;
+  transition: all 0.3s;
+  width: 100%;
+  object-fit: cover;
 }
 
 .portfolio .portfolio-wrap .portfolio-info {
   padding: 25px 20px;
+  min-height: 225px;
   background-color: #fff;
   /* position: relative; */
   border-top: 1px solid #f3f3f3;
@@ -1188,7 +1207,7 @@ section {
   color: #ffc000;
   border-radius: 50%;
   padding: 8px;
-  border: 2px dotted #f5a0a0;
+  border: 2px dotted #f5b800;
 }
 
 .contact .info-box h3 {
@@ -1203,84 +1222,6 @@ section {
   line-height: 24px;
   font-size: 14px;
   margin-bottom: 0;
-}
-
-.contact .php-email-form {
-  box-shadow: 0 0 30px rgba(214, 215, 216, 0.6);
-  padding: 30px;
-}
-
-.contact .php-email-form .error-message {
-  display: none;
-  color: #fff;
-  background: #ed3c0d;
-  text-align: left;
-  padding: 15px;
-  font-weight: 600;
-}
-
-.contact .php-email-form .error-message br + br {
-  margin-top: 25px;
-}
-
-.contact .php-email-form .sent-message {
-  display: none;
-  color: #fff;
-  background: #18d26e;
-  text-align: center;
-  padding: 15px;
-  font-weight: 600;
-}
-
-.contact .php-email-form .loading {
-  display: none;
-  background: #fff;
-  text-align: center;
-  padding: 15px;
-}
-
-.contact .php-email-form .loading:before {
-  content: '';
-  display: inline-block;
-  border-radius: 50%;
-  width: 24px;
-  height: 24px;
-  margin: 0 10px -6px 0;
-  border: 3px solid #18d26e;
-  border-top-color: #eee;
-  animation: animate-loading 1s linear infinite;
-}
-
-.contact .php-email-form input,
-.contact .php-email-form textarea {
-  border-radius: 0;
-  box-shadow: none;
-  font-size: 14px;
-}
-
-.contact .php-email-form input::focus,
-.contact .php-email-form textarea::focus {
-  background-color: #ffc000;
-}
-
-.contact .php-email-form input {
-  padding: 10px 15px;
-}
-
-.contact .php-email-form textarea {
-  padding: 12px 15px;
-}
-
-.contact .php-email-form button[type='submit'] {
-  background: #ffc000;
-  border: 0;
-  padding: 10px 24px;
-  color: #fff;
-  transition: 0.4s;
-}
-
-.contact .php-email-form button[type='submit']:hover {
-  background: #ffc71f;
 }
 
 @keyframes animate-loading {
@@ -1349,6 +1290,11 @@ section {
   padding: 30px 20px;
 }
 
+#footer .footer-top .footer-info img {
+  width: 50%;
+  object-fit: contain;
+}
+
 #footer .footer-top .footer-info h3 {
   font-size: 36px;
   margin: 0 0 20px 0;
@@ -1405,7 +1351,7 @@ section {
 
 #footer .footer-top .footer-links ul i {
   padding-right: 2px;
-  color: #ed5b5b;
+  color: #ffc000;
   font-size: 18px;
   line-height: 1;
 }
@@ -1428,7 +1374,7 @@ section {
 }
 
 #footer .footer-top .footer-links ul a:hover {
-  color: #eb4444;
+  color: #ffc71f;
 }
 
 #footer .footer-top .footer-newsletter form {
