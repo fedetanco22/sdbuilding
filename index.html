@@ -47,14 +47,7 @@
         <nav id="navbar" class="navbar">
           <ul>
             <li><a class="nav-link scrollto active" href="#hero" data-translate="header_nav_home">Home</a></li>
-
-            <li class="dropdown">
-              <a href="#about" class="nav-link scrollto"><span data-translate="header_nav_about"></span><i class="bi bi-chevron-down dropdown-indicator"></i></a>
-              <ul>
-                <li><a class="nav-link scrollto" href="#team" data-translate="hero_title_team">Team</a></li>
-              </ul>
-            </li>
-
+            <li><a class="nav-link scrollto active" href="#about" data-translate="header_nav_about">About</a></li>
             <li class="dropdown">
               <a class="nav-link scrollto" href="#services"><span data-translate="header_nav_services"></span><i class="bi bi-chevron-down dropdown-indicator"></i></a>
               <ul>
@@ -68,8 +61,8 @@
 
             <div class="d-flex justify-content-center justify-content-lg-start">
               <button onclick="toggleLanguage()" class="lang-button">
-                <img id="flag-image" src="./assets/img/flag/english-flag.png" alt="English Flag" class="lang-button-image" />
-                <span data-translate="language_selector"> Lang Selector</span>
+                <img id="flag-image" src="./assets/img/flag/UK.png" alt="English Flag" class="lang-button-image" />
+                <span class="flag" data-translate="language_selector"> Lang Selector</span>
               </button>
             </div>
           </ul>
@@ -98,7 +91,7 @@
         <div class="container">
           <div class="row justify-content-center">
             <div class="col-lg-4 order-1 order-lg-2" data-aos="fade-left">
-              <img src="assets/img/autocad.jpg" class="img-fluid" alt="" />
+              <img src="assets/img/about-us.jpeg" class="img-about" alt="" />
             </div>
             <div class="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 content" data-aos="fade-right">
               <div class="section-title">
@@ -172,7 +165,7 @@
           </div>
 
           <div class="row justify-content-center">
-            <div class="col-lg-4" data-aos="fade-up">
+            <div class="col-lg-3" data-aos="fade-up">
               <div class="section-subtitle">
                 <span data-translate="section_services_title_cad"></span>
                 <h4 data-translate="section_services_title_cad"></h4>
@@ -198,7 +191,7 @@
               </div>
             </div>
 
-            <div class="col-lg-4 mt-4 mt-lg-0" data-aos="fade-up" data-aos-delay="150">
+            <div class="col-lg-3 mt-4 mt-lg-0" data-aos="fade-up" data-aos-delay="150">
               <div class="section-subtitle">
                 <span data-translate="section_services_title_bim">Services</span>
                 <h4 data-translate="section_services_title_bim">Services</h4>
@@ -232,23 +225,23 @@
       <section id="clients" class="clients">
         <div class="container" data-aos="zoom-in">
           <div class="row d-flex align-items-center justify-content-center">
-            <div class="col-lg-2 col-md-4 col-6">
+            <div class="col-4 col-sm-4 col-sm-4 col-md-3 col-lg-2">
               <img src="assets/img/logo-tools/revit.jpeg" class="img-fluid" alt="" />
             </div>
 
-            <div class="col-lg-2 col-md-4 col-6">
+            <div class="col-4 col-sm-4 col-md-3 col-lg-2">
               <img src="assets/img/logo-tools/bim360.png" class="img-fluid" alt="" />
             </div>
 
-            <div class="col-lg-2 col-md-4 col-6">
+            <div class="col-4 col-sm-4 col-md-3 col-lg-2">
               <img src="assets/img/logo-tools/recap.png" class="img-fluid" alt="" />
             </div>
 
-            <div class="col-lg-2 col-md-4 col-6">
+            <div class="col-4 col-sm-4 col-md-3 col-lg-2">
               <img src="assets/img/logo-tools/autocad.png" class="img-fluid" alt="" />
             </div>
 
-            <div class="col-lg-2 col-md-4 col-6">
+            <div class="col-4 col-sm-4 col-md-3 col-lg-2">
               <img src="assets/img/logo-tools/navisworks.jpeg" class="img-fluid" alt="" />
             </div>
           </div>
@@ -332,57 +325,58 @@
             <h3 data-translate="section_fields_title">Our field of action</h3>
             <p data-translate="section_fields_text"></p>
           </div>
-          <div class="row">
-            <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up">
+          <div class="row justify-content-center">
+            <div class="col-lg-2 col-md-4 d-flex align-items-stretch" data-aos="fade-up">
               <div class="icon-box">
                 <div class="icon"><i class="bi bi-building"></i></div>
                 <h4 data-translate="section_fields_item1">Lorem Ipsum</h4>
               </div>
             </div>
 
-            <div class="col-lg-3 col-md-6 d-flex align-items-stretch mt-4 mt-md-0" data-aos="fade-up" data-aos-delay="150">
+            <div class="col-lg-2 col-md-4 d-flex align-items-stretch mt-4 mt-md-0" data-aos="fade-up" data-aos-delay="150">
               <div class="icon-box">
                 <div class="icon"><i class="bi bi-houses-fill"></i></div>
                 <h4 data-translate="section_fields_item2">Lorem Ipsum</h4>
               </div>
             </div>
 
-            <div class="col-lg-3 col-md-6 d-flex align-items-stretch mt-4 mt-lg-0" data-aos="fade-up" data-aos-delay="300">
+            <div class="col-lg-2 col-md-4 d-flex align-items-stretch mt-4 mt-lg-0" data-aos="fade-up" data-aos-delay="300">
               <div class="icon-box">
                 <div class="icon"><i class="bi bi-building-fill"></i></div>
                 <h4 data-translate="section_fields_item3">Lorem Ipsum</h4>
               </div>
             </div>
 
-            <div class="col-lg-3 col-md-6 d-flex align-items-stretch mt-4 mt-lg-0" data-aos="fade-up" data-aos-delay="450">
+            <div class="col-lg-2 col-md-4 d-flex align-items-stretch mt-4 mt-lg-0" data-aos="fade-up" data-aos-delay="450">
               <div class="icon-box">
                 <div class="icon"><i class="bi bi-h-square-fill"></i></div>
                 <h4 data-translate="section_fields_item4">Lorem Ipsum</h4>
               </div>
             </div>
-
-            <div class="col-lg-3 col-md-6 d-flex align-items-stretch mt-4" data-aos="fade-up" data-aos-delay="600">
+          </div>
+          <div class="row justify-content-center">
+            <div class="col-lg-2 col-md-4 d-flex align-items-stretch mt-4" data-aos="fade-up" data-aos-delay="600">
               <div class="icon-box">
                 <div class="icon"><i class="bi bi-bank"></i></div>
                 <h4 data-translate="section_fields_item5">Lorem Ipsum</h4>
               </div>
             </div>
 
-            <div class="col-lg-3 col-md-6 d-flex align-items-stretch mt-4" data-aos="fade-up" data-aos-delay="750">
+            <div class="col-lg-2 col-md-4 d-flex align-items-stretch mt-4" data-aos="fade-up" data-aos-delay="750">
               <div class="icon-box">
                 <div class="icon"><i class="bi bi-airplane-fill"></i></div>
                 <h4 data-translate="section_fields_item6">Lorem Ipsum</h4>
               </div>
             </div>
 
-            <div class="col-lg-3 col-md-6 d-flex align-items-stretch mt-4" data-aos="fade-up" data-aos-delay="600">
+            <div class="col-lg-2 col-md-4 d-flex align-items-stretch mt-4" data-aos="fade-up" data-aos-delay="600">
               <div class="icon-box">
                 <div class="icon"><i class="bi bi-buildings"></i></div>
                 <h4 data-translate="section_fields_item7">Lorem Ipsum</h4>
               </div>
             </div>
 
-            <div class="col-lg-3 col-md-6 d-flex align-items-stretch mt-4" data-aos="fade-up" data-aos-delay="750">
+            <div class="col-lg-2 col-md-4 d-flex align-items-stretch mt-4" data-aos="fade-up" data-aos-delay="750">
               <div class="icon-box">
                 <div class="icon"><i class="bi bi-sign-turn-right-fill"></i></div>
                 <h4 data-translate="section_fields_item8">Lorem Ipsum</h4>
@@ -416,39 +410,37 @@
           </div>
 
           <div class="row" data-aos="fade-up">
-            <div class="col-lg-4">
-              <div class="info-box mb-4">
-                <i class="bx bx-map"></i>
-                <h3 data-translate="location">Location</h3>
-                <p data-translate="location_text">Duarte Quirós 795, 1ºA, Cordoba Capital, Argentina</p>
-              </div>
-            </div>
-
-            <div class="col-lg-3">
-              <div class="info-box mb-4">
-                <i class="bx bx-phone-call"></i>
-                <h3>Alejandra</h3>
-
-                <p>+54 9 351 5 000 000</p>
-                <p><span>EN |</span><span> ES |</span><span> FR</span></p>
-              </div>
-            </div>
-
-            <div class="col-lg-3">
-              <div class="info-box mb-4">
-                <i class="bx bx-phone-call"></i>
-                <h3>Nicolas</h3>
-
-                <p>+54 9 351 5 000 000</p>
-                <p><span>EN |</span><span> ES |</span><span> FR</span></p>
-              </div>
-            </div>
-
             <div class="col-lg-2 col-md-6">
               <div class="info-box mb-4">
                 <i class="bx bx-envelope"></i>
                 <h3>Email</h3>
                 <p>contact@example.com</p>
+              </div>
+            </div>
+
+            <div class="col-lg-3">
+              <div class="info-box mb-4">
+                <i class="bi bi-whatsapp"></i>
+                <h3>Nicolas</h3>
+                <p>+54 9351-2289991</p>
+                <p><span>EN/</span><span>ES/</span><span>FR</span></p>
+              </div>
+            </div>
+
+            <div class="col-lg-3">
+              <div class="info-box mb-4">
+                <i class="bi bi-whatsapp"></i>
+                <h3>Alejandra</h3>
+                <p>+54 9351-5558893</p>
+                <p><span>EN/</span><span>ES/</span><span>FR</span></p>
+              </div>
+            </div>
+
+            <div class="col-lg-4">
+              <div class="info-box mb-4">
+                <i class="bx bx-map"></i>
+                <h3 data-translate="location">Location</h3>
+                <p data-translate="location_text">Duarte Quirós 795, 1ºA, Cordoba Capital, Argentina</p>
               </div>
             </div>
           </div>
@@ -479,10 +471,9 @@
               <div class="col-lg-4 col-md-6 footer-links">
                 <h4>Useful Links</h4>
                 <ul>
-                  <li><i class="bx bx-chevron-right"></i> <a href="index.html">Home</a></li>
-                  <li><i class="bx bx-chevron-right"></i> <a href="#about">About us</a></li>
+                  <li><i class="bx bx-chevron-right"></i><a class="nav-link scrollto active" href="#hero" data-translate="header_nav_home">Home</a></li>
+                  <li><i class="bx bx-chevron-right"></i><a class="nav-link scrollto active" href="#about" data-translate="header_nav_about">About</a></li>
                   <li><i class="bx bx-chevron-right"></i> <a href="#services">Services</a></li>
-                  <li><i class="bx bx-chevron-right"></i> <a href="#team">Team</a></li>
                 </ul>
               </div>
 
@@ -509,7 +500,7 @@
           <!-- You can delete the links only if you purchased the pro version. -->
           <!-- Licensing information: https://bootstrapmade.com/license/ -->
           <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/day-multipurpose-html-template-for-free/ -->
-          Designed by <a href="">FJT</a>
+          Designed by <a target="_blank" href="https://github.com/fedetanco22?tab=repositories">FJT</a>
         </div>
       </div>
     </footer>
@@ -522,7 +513,6 @@
     <script src="assets/vendor/aos/aos.js"></script>
     <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-    <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
     <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
     <script src="assets/vendor/php-email-form/validate.js"></script>
 
