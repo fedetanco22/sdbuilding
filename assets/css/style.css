@@ -457,6 +457,12 @@ h6 {
   height: 100vh;
 }
 
+@media (max-width: 556px) {
+  #hero .hero-logo img {
+    width: 50%;
+  }
+}
+
 @media (min-width: 1024px) {
   #hero {
     background-attachment: fixed;
