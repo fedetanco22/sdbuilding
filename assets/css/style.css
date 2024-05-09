@@ -828,6 +828,12 @@ section:last-child {
   justify-content: center;
 }
 
+@media (max-width: 1200px) {
+  .portfolio {
+    height: 100%;
+  }
+}
+
 .portfolio .portfolio-item {
   max-height: 400px;
 }
